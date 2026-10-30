@@ -1,0 +1,64 @@
+{
+  "transactions": 284807,
+  "frauds": 492,
+  "day1": {
+    "transactions": 144786,
+    "frauds": 281
+  },
+  "day2": {
+    "transactions": 140021,
+    "frauds": 211
+  },
+  "alert_budget": 0.002,
+  "model_threshold": 0.01276,
+  "rules": {
+    "V14": -4.051,
+    "V17": -1.655,
+    "V12": -3.653
+  },
+  "delivery": {
+    "messages": 290355,
+    "redeliveries_ignored": 5548,
+    "processed": 284807,
+    "late_events": 1381
+  },
+  "late_messages_over_5_min": 1410,
+  "late_frauds": 0,
+  "late_frauds_still_alerted": 0,
+  "alerts_on_late_events": 10,
+  "windows_finalised": 576,
+  "batch_ms_p50": 12.95,
+  "batch_ms_p99": 16.32,
+  "per_event_ms_p50": 0.0259,
+  "score_psi_day1_vs_day2": 0.1763,
+  "day2_rules_only": {
+    "alerts": 904,
+    "frauds_caught": 176,
+    "frauds": 211,
+    "precision": 0.1947,
+    "recall": 0.8341,
+    "fraud_value_caught": 18308.01,
+    "fraud_value": 26888.86,
+    "alert_rate": 0.00646
+  },
+  "day2_model_only": {
+    "alerts": 975,
+    "frauds_caught": 181,
+    "frauds": 211,
+    "precision": 0.1856,
+    "recall": 0.8578,
+    "fraud_value_caught": 18090.1,
+    "fraud_value": 26888.86,
+    "alert_rate": 0.00696
+  },
+  "day2_rules_or_model": {
+    "alerts": 1558,
+    "frauds_caught": 182,
+    "frauds": 211,
+    "precision": 0.1168,
+    "recall": 0.8626,
+    "fraud_value_caught": 18919.51,
+    "fraud_value": 26888.86,
+    "alert_rate": 0.01113
+  }
+}

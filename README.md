@@ -20,6 +20,11 @@ At PwC I built near-real-time transaction and risk-indicator datasets for bankin
 | **Why it matters** | Fraud alerts can't be lost to late data. Monitoring windows mustn't silently change after they're published. Both must hold at once, and here both are tested. |
 | **Proof** | Day 2, never seen in training: the model alone catches 85.8% of frauds and 67% of the fraud amount, at 18.6% precision. 500-transaction batches process in about 13 ms (p50). But the alert threshold, set on day 1, alerts on 0.70% of day-2 traffic against a 0.2% budget, and the README explains why. See [Results](#results). |
 
+## Charts
+Rendered from this repo's own results by `charts/make_charts.py` (`make charts`); CI re-renders them on every push.
+
+![Day-2 frauds caught and alert rate](docs/charts/day2_results.png)
+
 ## Architecture
 ```mermaid
 flowchart LR
